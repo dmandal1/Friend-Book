@@ -1,0 +1,206 @@
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.color-primary {
+  color: blueviolet;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-list {
+  position: absolute;
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 2px rgba(0, 00, 0, 0.2);
+}
+
+.friend-list::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+  content: "";
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.friend-list::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+  content: "";
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.friend-book-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.friend-logo {
+  color: blueviolet;
+}
+
+.friend-book-heading {
+  color: red;
+  letter-spacing: 5px;
+}
+
+.friend-book-list-heading {
+  color: red;
+  letter-spacing: 3px;
+  margin: 10px; 10px;
+  text-align: center;
+  position: sticky;
+}
+
+.friend-list-form {
+  padding: 0 20px;
+}
+
+.friend-list-form input {
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 27px;
+}
+
+input,
+button:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+.friend-list-form button[type="submit"] {
+  background-color: #fff;
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  padding: 10px 20px;
+  border-radius: 27px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.friend-list-item-heading {
+  display: flex;
+  margin: 5px;
+}
+
+.friend-book-body {
+  width: 100%;
+  height: 200px;
+  padding: 10px 20px;
+  overflow-y: scroll;
+}
+
+.friend-list-item-heading {
+  font-size: 12px;
+  font-weight: bolder;
+  background-color: blueviolet;
+  border-radius: 15px;
+  margin: 10px;
+  margin-left: 15px;
+  margin-right: 2em;
+  color: white;
+}
+
+#action-btn {
+  margin: 10px;
+  margin-left: -3px;
+  
+}
+
+#favorite {
+  margin: 10px;
+  margin-left: 70px;
+}
+
+#fname {
+  margin: 10px;
+  margin-left: 60px;
+}
+
+.friend-list-items {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+
+}
+.friend-list-items-info {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.fa-fa-icon {
+  cursor: pointer;
+}
+
+.done {
+  color: yellow;
+}
+.fa-star {
+  /* color: red; */
+  margin-right: 2em;
+}
+
+.FriendTable {
+  cellpadding: 5px;
+}

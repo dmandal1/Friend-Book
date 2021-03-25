@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend Book</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="friend-list">
+        <div class="friend-book-header">
+          <i class="fa fa-user-friends fa-5x friend-logo"></i>
+          <p class="friend-book-heading">Friend Book</p>
+        </div>
+        <div class="friend-list-form">
+          <form onsubmit="submitFriendName(event)">
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter full name"
+              maxlength="15"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <h4 class="friend-book-list-heading">Friend Book Lists</h4>
+        <div class="friend-list-item-heading">
+          <p id="fname">Friend Name</p>
+          <p id="favorite">Favorite</p>
+          <p id="action-btn">Action</p>
+        </div>
+        <div class="friend-book-body"></div>
+      </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d0275da5ed.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
