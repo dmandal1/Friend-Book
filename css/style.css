@@ -204,3 +204,7 @@ button {
 .FriendTable {
   cellpadding: 5px;
 }
+
+.footer-tag {
+  text-align: center;
+}
